@@ -19,7 +19,7 @@ const AnimatedRoute: React.FC<AnimatedRouteProps> = ({ path, color = '#3B82F6' }
     setProgress(0);
 
     // Animate the route
-    const duration = 2000; // 2 seconds
+    const duration = 15000; // 15 seconds
     const startTime = Date.now();
 
     const animate = () => {
@@ -60,7 +60,7 @@ const AnimatedRoute: React.FC<AnimatedRouteProps> = ({ path, color = '#3B82F6' }
             [path[path.length - 1].latitude, path[path.length - 1].longitude]
           ]}
           color={color}
-          weight={3}
+          weight={5}
           opacity={0.3}
           dashArray="10, 10"
         />

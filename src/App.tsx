@@ -23,6 +23,11 @@ function App() {
       { id: '3', name: 'Tokyo', latitude: 35.6762, longitude: 139.6503 },
       { id: '4', name: 'Paris', latitude: 48.8566, longitude: 2.3522 },
       { id: '5', name: 'Dubai', latitude: 25.2048, longitude: 55.2708 },
+      { id: '6', name: 'Mumbai', latitude: 19.0902, longitude: 72.8628 },
+      { id: '7', name: 'Pune', latitude: 18.5793, longitude: 73.9089 },
+      { id: '8', name: 'Delhi', latitude: 28.5561, longitude: 77.1000 },
+      { id: '9', name: 'Bengaluru', latitude: 13.1989, longitude: 77.7069},
+      { id: '10', name: 'Hyderabad', latitude: 17.2403, longitude: 78.4294},
     ];
     setCities(mockCities);
   }, []);
@@ -112,8 +117,22 @@ function App() {
           </div>
         </div>
       </main>
+      <footer className="bg-gray-800 text-white text-center py-4 mt-8">
+        <p>
+          Developed with ❤️ by <span className="font-bold">Tushar Gangurde</span>
+        </p>
+        <a
+          href="https://github.com/Tushar282002"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:underline"
+        >
+          Visit my GitHub
+        </a>
+      </footer>
     </div>
   );
 }
 
 export default App;
+
